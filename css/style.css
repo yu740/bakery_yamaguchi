@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 /* CSS Document */
 body {
   width: 100%;
@@ -12,7 +13,7 @@ body {
   #header_nav_sp {
     display: none;
   }
-	
+
   header {
     width: 100%;
     position: fixed;
@@ -21,19 +22,19 @@ body {
     height: 100px;
     z-index: 1000;
   }
-	
+
   #header_nav_pc ul {
     padding: 0;
     margin: 0 auto;
     justify-content: space-between;
     text-align: center;
   }
-	
+
   #header_nav_pc ul {
     display: flex;
     align-items: center;
   }
-	
+
   #header_nav_pc li {
     font-size: 16px;
     width: 14%;
@@ -41,30 +42,30 @@ body {
     list-style-type: none;
     align-items: center;
   }
-	
+
   #header_nav_pc ul li a {
     padding: 0 20px;
   }
-	
+
   a {
     color: #333;
     text-decoration: none;
   }
-	
+
   a:hover {
     color: #AAAAAA;
   }
-	
+
   #logo_pc {
     margin: 0 auto;
     padding-top: 10px;
     display: inline-block;
   }
-	
+
   #logo_pc a {
     display: block;
   }
-	
+
   #logo_pc a img:hover {
     opacity: 0.5;
   }
@@ -127,18 +128,21 @@ body {
 }
 
 #slider img {
-  width: 100%; /*スライダー内の画像を横幅100%に*/
+  width: 100%;
+  /*スライダー内の画像を横幅100%に*/
   height: 200px;
   object-fit: cover;
   box-shadow: 10px 0px 20px 0px rgba(130, 130, 130, 0.38);
 }
 
-#slider .slick-slide { /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
-  margin: 0 50px; /*スライド左右の余白調整*/
+#slider .slick-slide {
+  /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+  margin: 0 50px;
+  /*スライド左右の余白調整*/
 }
 
 #index_about h1 {
-	margin: 50px auto;
+  margin: 50px auto;
 }
 
 #index_about p {
@@ -161,11 +165,11 @@ body {
   height: 100%;
   border-radius: 30px;
   margin-right: 30px;
-	text-align: left;
+  text-align: left;
 }
 
 ul {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 #menu_text {
@@ -210,8 +214,8 @@ ul {
 }
 
 .content_text {
-	padding: 20px;
-	text-decoration: none;
+  padding: 20px;
+  text-decoration: none;
 }
 
 .link_button {
@@ -296,6 +300,7 @@ ul {
   width: 90%;
   justify-content: space-between;
 }
+
 .cream_box_point {
   display: flex;
   margin: 100px auto 150px;
@@ -312,55 +317,55 @@ ul {
 
 /* menu.html 商品カテゴリ */
 .select_box {
-    position: relative;
-    margin: 30px 0;
+  position: relative;
+  margin: 30px 0;
 }
 
 .select_box::before,
 .select_box::after {
-    position: absolute;
-    content: '';
-    pointer-events: none;
+  position: absolute;
+  content: '';
+  pointer-events: none;
 }
 
 .select_box::before {
-    right: 0;
-    display: inline-block;
-    width: 2.8em;
-    height: 2.8em;
-    border-radius: 0 25px 25px 0;
-    background-color: #ae8123;
-    content: '';
+  right: 0;
+  display: inline-block;
+  width: 2.8em;
+  height: 2.8em;
+  border-radius: 0 25px 25px 0;
+  background-color: #ae8123;
+  content: '';
 }
 
 .select_box::after {
-    position: absolute;
-    top: 50%;
-    right: 1.4em;
-    transform: translate(50%, -50%) rotate(45deg);
-    width: 6px;
-    height: 6px;
-    border-bottom: 3px solid #fff;
-    border-right: 3px solid #fff;
-    content: '';
+  position: absolute;
+  top: 50%;
+  right: 1.4em;
+  transform: translate(50%, -50%) rotate(45deg);
+  width: 6px;
+  height: 6px;
+  border-bottom: 3px solid #fff;
+  border-right: 3px solid #fff;
+  content: '';
 }
 
 .select_box .category {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    min-width: 100%;
-    height: 2.8em;
-    padding: .4em 3.6em .4em .8em;
-    border: 2px solid #ae8123;
-    border-radius: 25px;
-    color: #333333;
-    font-size: 1em;
-    cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  min-width: 100%;
+  height: 2.8em;
+  padding: .4em 3.6em .4em .8em;
+  border: 2px solid #ae8123;
+  border-radius: 25px;
+  color: #333333;
+  font-size: 1em;
+  cursor: pointer;
 }
 
 .select_box .category:focus {
-    outline: 1px solid #ae8123;
+  outline: 1px solid #ae8123;
 }
 
 /* menu.html 商品リスト */
@@ -407,8 +412,8 @@ ul {
   width: 100%;
 }
 
-.item-list .none-select:nth-of-type(n+2){
-	display: none;
+.item-list .none-select:nth-of-type(n+2) {
+  display: none;
 }
 
 /* store.html */
@@ -426,7 +431,7 @@ ul {
 }
 
 .store_text .link_button {
-	width: 300px;
+  width: 300px;
 }
 
 /* news.html */
@@ -490,7 +495,7 @@ ul {
   height: 30px;
 }
 
-.pagenation > * + * {
+.pagenation>*+* {
   margin-left: 8px;
 }
 
@@ -680,7 +685,7 @@ footer {
     background-color: #fffaef;
     font-family: 'Kosugi Maru', sans-serif;
   }
-	
+
   header {
     width: 100%;
     position: fixed;
@@ -688,59 +693,59 @@ footer {
     background-color: #ffeabc;
     z-index: 1000;
   }
-	
+
   ul {
-	padding-left: 0;
+    padding-left: 0;
   }
-	
+
   li {
-	list-style-type: none;
+    list-style-type: none;
   }
-	
+
   p {
-	list-style-type: none;
+    list-style-type: none;
   }
-	
+
   .index_news_content a {
     color: #333;
     text-decoration: none;
   }
-	
+
   a:hover {
     color: #AAAAAA;
   }
-	
+
   #header_nav_pc {
     display: none;
   }
-	
+
   #header_nav_sp {
     display: flex;
     text-align: center;
     justify-content: space-between;
-	align-items: center;
+    align-items: center;
   }
-	
+
   #header_nav_sp img {
     width: 300px;
     height: auto;
     margin-left: 10px;
   }
-	
+
   #header_nav_sp img:hover {
     opacity: 0.5;
   }
-	
+
   .nav {
     text-align: center;
   }
-	
+
   /* ハンバーガーメニュー */
   /* チェックボックスを非表示にする */
   .drawer_hidden {
     display: none;
   }
-	
+
   /* ハンバーガーアイコンの設置スペース */
   .drawer_open {
     display: flex;
@@ -749,12 +754,15 @@ footer {
     justify-content: center;
     align-items: center;
     position: relative;
-    z-index: 100; /* 重なり順を一番上にする */
+    z-index: 100;
+    /* 重なり順を一番上にする */
     cursor: pointer;
   }
-	
+
   /* ハンバーガーメニューのアイコン */
-  .drawer_open span, .drawer_open span:before, .drawer_open span:after {
+  .drawer_open span,
+  .drawer_open span:before,
+  .drawer_open span:after {
     content: '';
     display: block;
     height: 3px;
@@ -763,77 +771,79 @@ footer {
     background: #333;
     transition: 0.5s;
     position: absolute;
-	align-items: center;
+    align-items: center;
   }
-	
+
   /* 三本線の一番上の棒の位置調整 */
   .drawer_open span:before {
     bottom: 8px;
   }
-	
+
   /* 三本線の一番下の棒の位置調整 */
   .drawer_open span:after {
     top: 8px;
   }
-	
+
   /* アイコンがクリックされたら真ん中の線を透明にする */
-  #drawer_input:checked ~ .drawer_open span {
+  #drawer_input:checked~.drawer_open span {
     background: rgba(255, 255, 255, 0);
   }
-	
+
   /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
-  #drawer_input:checked ~ .drawer_open span::before {
+  #drawer_input:checked~.drawer_open span::before {
     bottom: 0;
     transform: rotate(45deg);
   }
-	
-  #drawer_input:checked ~ .drawer_open span::after {
+
+  #drawer_input:checked~.drawer_open span::after {
     top: 0;
     transform: rotate(-45deg);
   }
-	
+
   /* メニューのデザイン*/
   .nav_content {
     width: 100%;
     height: 100%;
     position: fixed;
     top: 0;
-    left: 100%; /* メニューを画面の外に飛ばす */
+    left: 100%;
+    /* メニューを画面の外に飛ばす */
     z-index: 99;
     transition: .5s;
-    background-color: rgba(174,129,35,0.8)
+    background-color: rgba(174, 129, 35, 0.8)
   }
-	
+
   .nav_list {
     list-style: none;
   }
-	
+
   .nav_list li {
     color: #fff;
     font-size: 20px;
     padding: 30px;
   }
-	
+
   .nav_list li a {
     color: #fff;
     text-decoration: none;
   }
-	
+
   /* アイコンがクリックされたらメニューを表示 */
-  #drawer_input:checked ~ .nav_content {
-    left: 0; /* メニューを画面に入れる */
+  #drawer_input:checked~.nav_content {
+    left: 0;
+    /* メニューを画面に入れる */
   }
-	
+
   /* ここからページ内コンテンツ */
   #contents {
     width: 80%;
     margin: 0 auto;
   }
-	
+
   #mainvisual {
     display: none;
   }
-	
+
   #mainvisual_sp {
     display: block;
     width: 100%;
@@ -841,13 +851,13 @@ footer {
     position: relative;
     padding-left: 0;
   }
-	
+
   #mainvisual_sp li {
     list-style: none;
     width: 100%;
     height: 100%;
   }
-	
+
   #mainvisual_sp li img {
     height: 800px;
     position: absolute;
@@ -855,127 +865,135 @@ footer {
     top: 0;
     width: 100%;
   }
-	
+
   /* index.html スマホ */
   #index_about {
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 200px;
   }
-	
+
   #slider {
     margin: 0 auto;
     padding: 0;
     list-style: none;
   }
-	
+
   #slider img {
     aspect-ratio: 100 / 150;
   }
-	
-  #slider .slick-slide { /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
-    margin: 0 5px; /*スライド左右の余白調整*/
+
+  #slider .slick-slide {
+    /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+    margin: 0 5px;
+    /*スライド左右の余白調整*/
   }
-	
+
   .link_button {
-	text-decoration: none;
-  }	
-	
+    text-decoration: none;
+  }
+
   #index_about p {
     margin-top: 25px;
     margin-bottom: 40px;
   }
-	
+
   #index_menu {
-	width: 102%;
+    width: 102%;
     display: block;
     justify-content: center;
     margin: 10px auto;
     background-color: #ffeabc;
     border-radius: 30px;
   }
-	
+
   ul {
     padding-left: 0;
   }
-	
+
   #menu_img img {
     width: 100%;
     height: auto;
-	object-fit: cover;
+    object-fit: cover;
   }
-	
+
   .item-list ul li:nth-child(3n-1) {
-  	margin: 10px 0%;
+    margin: 10px 0%;
   }
-	
+
   #menu_text {
     display: flex;
   }
-	
+
   #menu_text .link_button {
-	margin: 0 auto;	
+    margin: 0 auto;
   }
-	
+
   #index_reserve_online {
     display: block;
     margin-top: 20px auto;
   }
-	
+
   #index_reserve {
-	width: 90%;
+    width: 101%;
     justify-content: center;
     margin: 0 auto;
     background-color: #ffeabc;
     border-radius: 30px;
     text-align: center;
-    padding: 5px 30px;
     margin-bottom: 20px;
+    padding: 0;
   }
-	
+
   #index_online {
-	width: 90%;
+    width: 101%;
     justify-content: center;
     margin: 0 auto;
     background-color: #ffeabc;
     border-radius: 30px;
     text-align: center;
-    padding: 5px 30px;
     margin-bottom: 20px;
+    padding: 0;
   }
-	
+
+  .content_text {
+    padding: 10px;
+    text-decoration: none;
+  }
+
   #index_news_list {
     display: block;
     justify-content: center;
-	list-style-type: none;
+    list-style-type: none;
   }
 
   .index_news_content {
     width: 80%;
     height: 500px;
     margin: 50px auto;
-	text-decoration: none;
-	box-shadow: 6px 6px 10px 0px rgba(130, 130, 130, 0.38);
+    text-decoration: none;
+    box-shadow: 6px 6px 10px 0px rgba(130, 130, 130, 0.38);
   }
-	
+
   .index_news_content img {
     width: 100%;
     height: auto;
   }
-	
+
   /* about.html スマホ */
   #about_top {
     text-align: center;
   }
-	
-	
+
+
   #about_top img {
     width: 80%;
     height: auto;
-	  margin: 20px auto;
+    margin: 20px auto;
   }
-	
-  .point, .store_info {
+
+  .point,
+  .store_info {
     display: flex;
     flex-flow: column;
     margin: 100px auto;
@@ -988,7 +1006,7 @@ footer {
     margin: 100px auto;
     text-align: center;
   }
-	
+
   .point_content {
     display: flex;
     flex-flow: column;
@@ -1002,43 +1020,44 @@ footer {
   .contents_reverse {
     flex-direction: column-reverse;
   }
-	
+
   .point_img {
     width: 400px;
     height: 400px;
     border-radius: 50%;
     margin: 10px auto;
+    text-align: center;
   }
-	
+
   /* 商品リスト　スマホ */
   .item-list ul li {
     width: 100%;
     margin: 20 auto;
-	text-align: center;
+    text-align: center;
   }
-	
+
   .item-list ul li img {
     aspect-ratio: 380 / 310;
-	margin: 0 auto;
-	justify-content: center;
+    margin: 0 auto;
+    justify-content: center;
   }
-	
+
   .store_content {
     display: block;
     text-align: center;
     margin: 50px 0;
   }
-	
+
   #subject {
     width: 100%;
     margin: auto;
   }
-	
+
   #subject td {
     display: block;
     font-size: 18px;
   }
-	
+
   /* news.html スマホ */
   .news_link {
     display: block;
@@ -1047,29 +1066,29 @@ footer {
     margin: 50px auto;
     background-color: #fff;
   }
-	
+
   .news_link a {
     display: block;
   }
-	
+
   .news_link img {
     width: 100%;
     height: auto;
   }
-	
-	.news_page {
-	  width: 80%;
-	  margin: 20px auto;
-	}
 
-	.news_page img {
-	  width: 100%;
-	  height: auto;
-	}
+  .news_page {
+    width: 80%;
+    margin: 20px auto;
+  }
 
-	.news_page p {
-	  margin: 100px 0;
-	}
+  .news_page img {
+    width: 100%;
+    height: auto;
+  }
+
+  .news_page p {
+    margin: 100px 0;
+  }
 
   /* access.html スマホ */
   .access_text {
@@ -1077,27 +1096,27 @@ footer {
     text-align: center;
     margin: 50px 0;
   }
-	
-	
+
+
   .store_map {
     display: block;
     flex-direction: row-reverse;
   }
-	
+
   /* クリームボックスバナー スマホ */
   #cream_box_headline {
     text-align: center;
   }
-	
+
   #cream_box_page_pc img {
     display: none;
   }
-	
+
   #cream_box_page_sp {
     display: block;
     text-align: center;
   }
-	
+
   #cream_box_page_sp img {
     width: 100%;
     height: auto;
@@ -1105,7 +1124,7 @@ footer {
     margin: 30px auto;
     justify-content: center;
   }
-	
+
   .content_end {
     text-align: center;
   }
@@ -1116,25 +1135,25 @@ footer {
     margin: 100px auto;
     text-align: center;
   }
-	
+
   .blank {
     margin-top: 30px;
   }
-	
+
   #store_footer_pc {
     display: none;
   }
-	
+
   #footer_nav {
     display: none;
   }
-	
+
   #store_footer_sp {
     display: block;
     text-align: center;
     padding-bottom: 16px;
   }
-	
+
   #store_footer_sp #footer_logo {
     padding-top: 20px;
   }
