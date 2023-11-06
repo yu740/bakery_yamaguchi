@@ -5,6 +5,7 @@ body {
   width: 100%;
   margin: 0;
   background-color: #fffaef;
+  overflow-x: hidden;
   font-family: 'Kosugi Maru', sans-serif;
 }
 
@@ -997,20 +998,20 @@ footer {
     display: flex;
     flex-flow: column;
     margin: 100px auto;
-    text-align: center;
+    justify-content: center;
   }
 
   .cream_box_point {
     display: flex;
     flex-flow: column;
     margin: 100px auto;
-    text-align: center;
+    justify-content: center;
   }
 
   .point_content {
     display: flex;
     flex-flow: column;
-    text-align: center;
+    justify-content: center;
   }
 
   .point iframe {
